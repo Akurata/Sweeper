@@ -9,11 +9,13 @@
   "author": "Alex Kurata",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.6.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "fs": "0.0.1-security",
     "node-fetch": "^2.1.2",
     "node-gzip": "^1.1.2",
+    "path": "^0.12.7",
     "request": "^2.87.0",
     "zlib": "^1.0.5"
   }
