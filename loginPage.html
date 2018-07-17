@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body {
+      font-size: 17px;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode";
+    }
+    #container {
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    #container h1 {
+      margin: 0px;
+    }
+    #container input[type=text], input[type=password] {
+      font-size: 17px;
+      margin: 5px;
+    }
+    #container input[type=button] {
+      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode";
+    }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Login Page</h1>
+      <form id="login" action="/login" method='POST'>
+        <script>
+          function submitForm() {
+            fetch('/login', {
+              headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+              method:'POST',
+              body: JSON.stringify({
+                username: document.getElementById("user").value,
+                password: document.getElementById("password").value
+              })
+            }).then((res) => {
+              var resUrl = (res.url).substring((res.url).lastIndexOf('/'));
+              if(resUrl === '/fail') { //Login is bad
+                document.getElementById("error").style.visibility = "visible";
+              }
+            });
+          }
+        </script>
+        <br/>
+        <label>Username: <input id="user" type="text" value=""/></label>
+        <br/>
+        <label>Password: <input id="password" type="password" value=""/></label>
+        <br/>
+        <br/>
+        <input type="button" onClick="submitForm()" value="Submit" />
+      </form>
+    </div>
+    <div id="error" style="color:red; visibility:hidden">Wrong Username or Password</div>
+  </body>
+</html>

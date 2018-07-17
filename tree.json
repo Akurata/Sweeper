@@ -1672,29 +1672,7 @@
                                                                                     "parentable": true,
                                                                                     "children": {
                                                                                         "total": 1,
-                                                                                        "layouts": [
-                                                                                            {
-                                                                                                "updateable": true,
-                                                                                                "plid": 137433,
-                                                                                                "hasChildren": false,
-                                                                                                "groupId": 20182,
-                                                                                                "sortable": true,
-                                                                                                "priority": 0,
-                                                                                                "privateLayout": false,
-                                                                                                "type": "portlet",
-                                                                                                "layoutId": 490,
-                                                                                                "uuid": "7c4836fe-baec-47e3-a72d-f1e34fbfd4f4",
-                                                                                                "parentable": true,
-                                                                                                "children": {
-                                                                                                    "total": 0,
-                                                                                                    "layouts": []
-                                                                                                },
-                                                                                                "contentDisplayPage": false,
-                                                                                                "parentLayoutId": 448,
-                                                                                                "name": "Comparing the GRE and GMAT Tests for Graduate Admission",
-                                                                                                "friendlyURL": "/communication-arts/graduate/communication/gmat-gre-comparison"
-                                                                                            }
-                                                                                        ]
+                                                                                        "layouts": []
                                                                                     },
                                                                                     "contentDisplayPage": false,
                                                                                     "parentLayoutId": 273,
@@ -1778,71 +1756,7 @@
                                                                                     "parentable": true,
                                                                                     "children": {
                                                                                         "total": 3,
-                                                                                        "layouts": [
-                                                                                            {
-                                                                                                "updateable": true,
-                                                                                                "plid": 137435,
-                                                                                                "hasChildren": false,
-                                                                                                "groupId": 20182,
-                                                                                                "sortable": true,
-                                                                                                "priority": 0,
-                                                                                                "privateLayout": false,
-                                                                                                "type": "portlet",
-                                                                                                "layoutId": 491,
-                                                                                                "uuid": "15a692ce-434f-4acb-8adc-9077606003de",
-                                                                                                "parentable": true,
-                                                                                                "children": {
-                                                                                                    "total": 0,
-                                                                                                    "layouts": []
-                                                                                                },
-                                                                                                "contentDisplayPage": false,
-                                                                                                "parentLayoutId": 452,
-                                                                                                "name": "MA in Communication Course Descriptions",
-                                                                                                "friendlyURL": "/communication-arts/graduate/communication/courses"
-                                                                                            },
-                                                                                            {
-                                                                                                "updateable": true,
-                                                                                                "plid": 137437,
-                                                                                                "hasChildren": false,
-                                                                                                "groupId": 20182,
-                                                                                                "sortable": true,
-                                                                                                "priority": 1,
-                                                                                                "privateLayout": false,
-                                                                                                "type": "portlet",
-                                                                                                "layoutId": 492,
-                                                                                                "uuid": "0b671394-d77b-40a1-9803-f983212123a3",
-                                                                                                "parentable": true,
-                                                                                                "children": {
-                                                                                                    "total": 0,
-                                                                                                    "layouts": []
-                                                                                                },
-                                                                                                "contentDisplayPage": false,
-                                                                                                "parentLayoutId": 452,
-                                                                                                "name": "Full-Time Course Option",
-                                                                                                "friendlyURL": "/communication-arts/graduate/communication/full-time"
-                                                                                            },
-                                                                                            {
-                                                                                                "updateable": true,
-                                                                                                "plid": 137439,
-                                                                                                "hasChildren": false,
-                                                                                                "groupId": 20182,
-                                                                                                "sortable": true,
-                                                                                                "priority": 2,
-                                                                                                "privateLayout": false,
-                                                                                                "type": "portlet",
-                                                                                                "layoutId": 493,
-                                                                                                "uuid": "cc7d7bab-663b-48a8-867c-e92087220731",
-                                                                                                "parentable": true,
-                                                                                                "children": {
-                                                                                                    "total": 0,
-                                                                                                    "layouts": []
-                                                                                                },
-                                                                                                "contentDisplayPage": false,
-                                                                                                "parentLayoutId": 452,
-                                                                                                "name": "Part-Time Course Option",
-                                                                                                "friendlyURL": "/communication-arts/graduate/communication/part-time"
-                                                                                            }
-                                                                                        ]
+                                                                                        "layouts": []
                                                                                     },
                                                                                     "contentDisplayPage": false,
                                                                                     "parentLayoutId": 273,
@@ -1905,29 +1819,7 @@
                                                                                     "parentable": true,
                                                                                     "children": {
                                                                                         "total": 1,
-                                                                                        "layouts": [
-                                                                                            {
-                                                                                                "updateable": true,
-                                                                                                "plid": 137441,
-                                                                                                "hasChildren": false,
-                                                                                                "groupId": 20182,
-                                                                                                "sortable": true,
-                                                                                                "priority": 0,
-                                                                                                "privateLayout": false,
-                                                                                                "type": "portlet",
-                                                                                                "layoutId": 494,
-                                                                                                "uuid": "2d972399-3f16-4641-8579-5a1f0fedfcb3",
-                                                                                                "parentable": true,
-                                                                                                "children": {
-                                                                                                    "total": 0,
-                                                                                                    "layouts": []
-                                                                                                },
-                                                                                                "contentDisplayPage": false,
-                                                                                                "parentLayoutId": 454,
-                                                                                                "name": "Our Students",
-                                                                                                "friendlyURL": "/communication-arts/graduate/communication/students"
-                                                                                            }
-                                                                                        ]
+                                                                                        "layouts": []
                                                                                     },
                                                                                     "contentDisplayPage": false,
                                                                                     "parentLayoutId": 273,
@@ -6709,7 +6601,29 @@
                                                                                                 "parentable": true,
                                                                                                 "children": {
                                                                                                     "total": 1,
-                                                                                                    "layouts": []
+                                                                                                    "layouts": [
+                                                                                                        {
+                                                                                                            "updateable": true,
+                                                                                                            "plid": 137333,
+                                                                                                            "hasChildren": false,
+                                                                                                            "groupId": 20182,
+                                                                                                            "sortable": true,
+                                                                                                            "priority": 0,
+                                                                                                            "privateLayout": false,
+                                                                                                            "type": "portlet",
+                                                                                                            "layoutId": 440,
+                                                                                                            "uuid": "01d5f1ab-33c3-4680-8adf-3fd1bb773c7e",
+                                                                                                            "parentable": true,
+                                                                                                            "children": {
+                                                                                                                "total": 0,
+                                                                                                                "layouts": []
+                                                                                                            },
+                                                                                                            "contentDisplayPage": false,
+                                                                                                            "parentLayoutId": 400,
+                                                                                                            "name": "Information About MBA Students, Faculty, Alumni and Industry Professionals",
+                                                                                                            "friendlyURL": "/management/graduate/business-admin/who-are-we"
+                                                                                                        }
+                                                                                                    ]
                                                                                                 },
                                                                                                 "contentDisplayPage": false,
                                                                                                 "parentLayoutId": 391,
@@ -6877,7 +6791,29 @@
                                                                                                 "parentable": true,
                                                                                                 "children": {
                                                                                                     "total": 1,
-                                                                                                    "layouts": []
+                                                                                                    "layouts": [
+                                                                                                        {
+                                                                                                            "updateable": true,
+                                                                                                            "plid": 137331,
+                                                                                                            "hasChildren": false,
+                                                                                                            "groupId": 20182,
+                                                                                                            "sortable": true,
+                                                                                                            "priority": 0,
+                                                                                                            "privateLayout": false,
+                                                                                                            "type": "portlet",
+                                                                                                            "layoutId": 439,
+                                                                                                            "uuid": "0e7b9072-bb5c-4631-937f-0447974a4a74",
+                                                                                                            "parentable": true,
+                                                                                                            "children": {
+                                                                                                                "total": 0,
+                                                                                                                "layouts": []
+                                                                                                            },
+                                                                                                            "contentDisplayPage": false,
+                                                                                                            "parentLayoutId": 408,
+                                                                                                            "name": "MBA Degree Career Networking and Advising",
+                                                                                                            "friendlyURL": "/management/graduate/business-admin/networking-advising"
+                                                                                                        }
+                                                                                                    ]
                                                                                                 },
                                                                                                 "contentDisplayPage": false,
                                                                                                 "parentLayoutId": 391,
@@ -9995,7 +9931,71 @@
                                                                                     "parentable": true,
                                                                                     "children": {
                                                                                         "total": 3,
-                                                                                        "layouts": []
+                                                                                        "layouts": [
+                                                                                            {
+                                                                                                "updateable": true,
+                                                                                                "plid": 137211,
+                                                                                                "hasChildren": false,
+                                                                                                "groupId": 20182,
+                                                                                                "sortable": true,
+                                                                                                "priority": 0,
+                                                                                                "privateLayout": false,
+                                                                                                "type": "portlet",
+                                                                                                "layoutId": 379,
+                                                                                                "uuid": "43983b7f-bb7d-48f3-8135-37e04c14fc86",
+                                                                                                "parentable": true,
+                                                                                                "children": {
+                                                                                                    "total": 0,
+                                                                                                    "layouts": []
+                                                                                                },
+                                                                                                "contentDisplayPage": false,
+                                                                                                "parentLayoutId": 297,
+                                                                                                "name": "Teacher Recruitment",
+                                                                                                "friendlyURL": "/social-behavioral-sciences/education/college-career/resources/teacher-recruit"
+                                                                                            },
+                                                                                            {
+                                                                                                "updateable": true,
+                                                                                                "plid": 137213,
+                                                                                                "hasChildren": false,
+                                                                                                "groupId": 20182,
+                                                                                                "sortable": true,
+                                                                                                "priority": 1,
+                                                                                                "privateLayout": false,
+                                                                                                "type": "portlet",
+                                                                                                "layoutId": 380,
+                                                                                                "uuid": "12fcd6fd-4566-40ae-a2fb-eab483c50a34",
+                                                                                                "parentable": true,
+                                                                                                "children": {
+                                                                                                    "total": 0,
+                                                                                                    "layouts": []
+                                                                                                },
+                                                                                                "contentDisplayPage": false,
+                                                                                                "parentLayoutId": 297,
+                                                                                                "name": "Professional Organizations",
+                                                                                                "friendlyURL": "/social-behavioral-sciences/education/college-career/resources/professional-orgs"
+                                                                                            },
+                                                                                            {
+                                                                                                "updateable": true,
+                                                                                                "plid": 137215,
+                                                                                                "hasChildren": false,
+                                                                                                "groupId": 20182,
+                                                                                                "sortable": true,
+                                                                                                "priority": 2,
+                                                                                                "privateLayout": false,
+                                                                                                "type": "portlet",
+                                                                                                "layoutId": 381,
+                                                                                                "uuid": "4015f0f0-ba32-474a-a189-fd61953778f2",
+                                                                                                "parentable": true,
+                                                                                                "children": {
+                                                                                                    "total": 0,
+                                                                                                    "layouts": []
+                                                                                                },
+                                                                                                "contentDisplayPage": false,
+                                                                                                "parentLayoutId": 297,
+                                                                                                "name": "Employment of Recent Graduates",
+                                                                                                "friendlyURL": "/social-behavioral-sciences/education/college-career/resources/employment-grads"
+                                                                                            }
+                                                                                        ]
                                                                                     },
                                                                                     "contentDisplayPage": false,
                                                                                     "parentLayoutId": 198,
@@ -10187,7 +10187,50 @@
                                                                                     "parentable": true,
                                                                                     "children": {
                                                                                         "total": 2,
-                                                                                        "layouts": []
+                                                                                        "layouts": [
+                                                                                            {
+                                                                                                "updateable": true,
+                                                                                                "plid": 139200,
+                                                                                                "hasChildren": false,
+                                                                                                "groupId": 20182,
+                                                                                                "sortable": true,
+                                                                                                "priority": 3,
+                                                                                                "privateLayout": false,
+                                                                                                "type": "portlet",
+                                                                                                "layoutId": 1373,
+                                                                                                "uuid": "ea83ea8b-6638-4ff3-a1d1-fbbda68e9452",
+                                                                                                "parentable": true,
+                                                                                                "children": {
+                                                                                                    "total": 0,
+                                                                                                    "layouts": []
+                                                                                                },
+                                                                                                "contentDisplayPage": false,
+                                                                                                "parentLayoutId": 300,
+                                                                                                "name": "Requesting a Marist Certificate of Insurance/Liability",
+                                                                                                "friendlyURL": "/social-behavioral-sciences/psych/fieldwork/certificate"
+                                                                                            },
+                                                                                            {
+                                                                                                "updateable": true,
+                                                                                                "plid": 139202,
+                                                                                                "hasChildren": false,
+                                                                                                "groupId": 20182,
+                                                                                                "sortable": true,
+                                                                                                "priority": 4,
+                                                                                                "privateLayout": false,
+                                                                                                "type": "portlet",
+                                                                                                "layoutId": 1374,
+                                                                                                "uuid": "26df4107-47d7-4457-93c9-31946ca27042",
+                                                                                                "parentable": true,
+                                                                                                "children": {
+                                                                                                    "total": 0,
+                                                                                                    "layouts": []
+                                                                                                },
+                                                                                                "contentDisplayPage": false,
+                                                                                                "parentLayoutId": 300,
+                                                                                                "name": "Requesting an Undergraduate-Psychology-Issued Tuition Waiver",
+                                                                                                "friendlyURL": "/social-behavioral-sciences/psych/fieldwork/tuition-waiver"
+                                                                                            }
+                                                                                        ]
                                                                                     },
                                                                                     "contentDisplayPage": false,
                                                                                     "parentLayoutId": 202,
@@ -16063,7 +16106,7 @@
                                     "uuid": "b4c7d1e4-2179-4ce6-bebf-7347e3bf9a0e",
                                     "parentable": true,
                                     "children": {
-                                        "total": 16,
+                                        "total": 6,
                                         "layouts": [
                                             {
                                                 "updateable": true,
@@ -16109,11 +16152,285 @@
                                             },
                                             {
                                                 "updateable": true,
+                                                "plid": 138293,
+                                                "hasChildren": true,
+                                                "groupId": 20182,
+                                                "sortable": true,
+                                                "priority": 2,
+                                                "privateLayout": false,
+                                                "type": "portlet",
+                                                "layoutId": 920,
+                                                "uuid": "e6034fc9-3ab5-4281-ac01-744bc2e98d48",
+                                                "parentable": true,
+                                                "children": {
+                                                    "total": 12,
+                                                    "layouts": [
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138271,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 0,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 909,
+                                                            "uuid": "e2bc94d8-4cb4-4f8d-86d9-c28c16a9ef52",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Marist Scholarships",
+                                                            "friendlyURL": "/admission/financial-aid/marist-scholarships"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138273,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 1,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 910,
+                                                            "uuid": "31ec6e3b-7024-40f3-89a5-44e19f0cbdfb",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Merit Scholarships",
+                                                            "friendlyURL": "/admission/financial-aid/merit-scholarships"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 208727,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 2,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 1510,
+                                                            "uuid": "58f1c010-3a30-4c2b-b394-7e081148bcf0",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Grants",
+                                                            "friendlyURL": "/admission/financial-aid/grants"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 139058,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 3,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 1302,
+                                                            "uuid": "ddf64784-a869-4b11-80b3-12a54cdf491b",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Loans",
+                                                            "friendlyURL": "/admission/undergraduate/fin-aid/types-aid/loans"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138287,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 4,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 917,
+                                                            "uuid": "1795ccae-d8fb-4ed4-8307-6b711a35f737",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Commuter Grants",
+                                                            "friendlyURL": "/admission/financial-aid/commuter-grants"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138277,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 5,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 912,
+                                                            "uuid": "569a2a26-228f-4569-b0b1-98bf64a46fcd",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "NCAA Athletic Scholarship",
+                                                            "friendlyURL": "/admission/financial-aid/ncaa-athletic"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138275,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 6,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 911,
+                                                            "uuid": "96fd3408-e2d0-4e22-aa06-eea6d8cf6092",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Music Merit Scholarship",
+                                                            "friendlyURL": "/admission/financial-aid/music-merit-scholarship"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138279,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 7,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 913,
+                                                            "uuid": "c36b21b7-2c59-45db-a0d6-767a553323e4",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Physical Therapy Scholarships",
+                                                            "friendlyURL": "/admission/financial-aid/physical-therapy-scholarships"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138281,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 8,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 914,
+                                                            "uuid": "e062550f-a801-4672-aa07-caa4c125b695",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Physician Assistant Scholarship",
+                                                            "friendlyURL": "/admission/financial-aid/physician-asst-scholarships"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138283,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 9,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 915,
+                                                            "uuid": "52b5f612-66f7-4062-b1fb-b70eaaaba51a",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Sherman Scholarship",
+                                                            "friendlyURL": "/admission-financial-aid/sherman-scholarship"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138285,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 10,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 916,
+                                                            "uuid": "cd9d6abb-3342-451f-b07d-50dd671c4073",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Dollars for Scholars",
+                                                            "friendlyURL": "/admission/financial-aid/dollars-for-scholars"
+                                                        },
+                                                        {
+                                                            "updateable": true,
+                                                            "plid": 138289,
+                                                            "hasChildren": false,
+                                                            "groupId": 20182,
+                                                            "sortable": true,
+                                                            "priority": 11,
+                                                            "privateLayout": false,
+                                                            "type": "portlet",
+                                                            "layoutId": 918,
+                                                            "uuid": "646a8ce4-14d3-4642-b332-4cbbb2aeb2bf",
+                                                            "parentable": true,
+                                                            "children": {
+                                                                "total": 0,
+                                                                "layouts": []
+                                                            },
+                                                            "contentDisplayPage": false,
+                                                            "parentLayoutId": 920,
+                                                            "name": "Brother James Kearney Scholarship",
+                                                            "friendlyURL": "/admission/financial-aid/bro-james-kearney"
+                                                        }
+                                                    ]
+                                                },
+                                                "contentDisplayPage": false,
+                                                "parentLayoutId": 609,
+                                                "name": "Types of Aid",
+                                                "friendlyURL": "/admission/undergraduate/fin-aid/types-aid"
+                                            },
+                                            {
+                                                "updateable": true,
                                                 "plid": 138269,
                                                 "hasChildren": false,
                                                 "groupId": 20182,
                                                 "sortable": true,
-                                                "priority": 2,
+                                                "priority": 3,
                                                 "privateLayout": false,
                                                 "type": "portlet",
                                                 "layoutId": 908,
@@ -16130,221 +16447,11 @@
                                             },
                                             {
                                                 "updateable": true,
-                                                "plid": 138271,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 3,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 909,
-                                                "uuid": "e2bc94d8-4cb4-4f8d-86d9-c28c16a9ef52",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Marist Scholarships",
-                                                "friendlyURL": "/admission/financial-aid/marist-scholarships"
-                                            },
-                                            {
-                                                "updateable": true,
-                                                "plid": 138273,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 4,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 910,
-                                                "uuid": "31ec6e3b-7024-40f3-89a5-44e19f0cbdfb",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Merit Scholarships",
-                                                "friendlyURL": "/admission/financial-aid/merit-scholarships"
-                                            },
-                                            {
-                                                "updateable": true,
-                                                "plid": 138275,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 5,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 911,
-                                                "uuid": "96fd3408-e2d0-4e22-aa06-eea6d8cf6092",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Music Merit Scholarship",
-                                                "friendlyURL": "/admission/financial-aid/music-merit-scholarship"
-                                            },
-                                            {
-                                                "updateable": true,
-                                                "plid": 138277,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 6,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 912,
-                                                "uuid": "569a2a26-228f-4569-b0b1-98bf64a46fcd",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "NCAA Athletic Scholarship",
-                                                "friendlyURL": "/admission/financial-aid/ncaa-athletic"
-                                            },
-                                            {
-                                                "updateable": true,
-                                                "plid": 138279,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 7,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 913,
-                                                "uuid": "c36b21b7-2c59-45db-a0d6-767a553323e4",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Physical Therapy Scholarships",
-                                                "friendlyURL": "/admission/financial-aid/physical-therapy-scholarships"
-                                            },
-                                            {
-                                                "updateable": true,
-                                                "plid": 138281,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 8,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 914,
-                                                "uuid": "e062550f-a801-4672-aa07-caa4c125b695",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Physician Assistant Scholarship",
-                                                "friendlyURL": "/admission/financial-aid/physician-asst-scholarships"
-                                            },
-                                            {
-                                                "updateable": true,
-                                                "plid": 138283,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 9,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 915,
-                                                "uuid": "52b5f612-66f7-4062-b1fb-b70eaaaba51a",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Sherman Scholarship",
-                                                "friendlyURL": "/admission-financial-aid/sherman-scholarship"
-                                            },
-                                            {
-                                                "updateable": true,
-                                                "plid": 138285,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 10,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 916,
-                                                "uuid": "cd9d6abb-3342-451f-b07d-50dd671c4073",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Dollars for Scholars",
-                                                "friendlyURL": "/admission/financial-aid/dollars-for-scholars"
-                                            },
-                                            {
-                                                "updateable": true,
-                                                "plid": 138287,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 11,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 917,
-                                                "uuid": "1795ccae-d8fb-4ed4-8307-6b711a35f737",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Commuter Grants",
-                                                "friendlyURL": "/admission/financial-aid/commuter-grants"
-                                            },
-                                            {
-                                                "updateable": true,
-                                                "plid": 138289,
-                                                "hasChildren": false,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 12,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 918,
-                                                "uuid": "646a8ce4-14d3-4642-b332-4cbbb2aeb2bf",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 0,
-                                                    "layouts": []
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Brother James Kearney Scholarship",
-                                                "friendlyURL": "/admission/financial-aid/bro-james-kearney"
-                                            },
-                                            {
-                                                "updateable": true,
                                                 "plid": 138291,
                                                 "hasChildren": true,
                                                 "groupId": 20182,
                                                 "sortable": true,
-                                                "priority": 13,
+                                                "priority": 4,
                                                 "privateLayout": false,
                                                 "type": "portlet",
                                                 "layoutId": 919,
@@ -16446,54 +16553,11 @@
                                             },
                                             {
                                                 "updateable": true,
-                                                "plid": 138293,
-                                                "hasChildren": true,
-                                                "groupId": 20182,
-                                                "sortable": true,
-                                                "priority": 14,
-                                                "privateLayout": false,
-                                                "type": "portlet",
-                                                "layoutId": 920,
-                                                "uuid": "e6034fc9-3ab5-4281-ac01-744bc2e98d48",
-                                                "parentable": true,
-                                                "children": {
-                                                    "total": 1,
-                                                    "layouts": [
-                                                        {
-                                                            "updateable": true,
-                                                            "plid": 139058,
-                                                            "hasChildren": false,
-                                                            "groupId": 20182,
-                                                            "sortable": true,
-                                                            "priority": 0,
-                                                            "privateLayout": false,
-                                                            "type": "portlet",
-                                                            "layoutId": 1302,
-                                                            "uuid": "ddf64784-a869-4b11-80b3-12a54cdf491b",
-                                                            "parentable": true,
-                                                            "children": {
-                                                                "total": 0,
-                                                                "layouts": []
-                                                            },
-                                                            "contentDisplayPage": false,
-                                                            "parentLayoutId": 920,
-                                                            "name": "Loans",
-                                                            "friendlyURL": "/admission/undergraduate/fin-aid/types-aid/loans"
-                                                        }
-                                                    ]
-                                                },
-                                                "contentDisplayPage": false,
-                                                "parentLayoutId": 609,
-                                                "name": "Types of Aid",
-                                                "friendlyURL": "/admission/undergraduate/fin-aid/types-aid"
-                                            },
-                                            {
-                                                "updateable": true,
                                                 "plid": 138295,
                                                 "hasChildren": false,
                                                 "groupId": 20182,
                                                 "sortable": true,
-                                                "priority": 15,
+                                                "priority": 5,
                                                 "privateLayout": false,
                                                 "type": "portlet",
                                                 "layoutId": 921,
@@ -26334,7 +26398,7 @@
                     {
                         "updateable": true,
                         "plid": 208092,
-                        "hasChildren": false,
+                        "hasChildren": true,
                         "groupId": 20182,
                         "sortable": true,
                         "priority": 0,
@@ -26344,8 +26408,30 @@
                         "uuid": "919e1116-01b0-47d2-a8f7-f658f26030aa",
                         "parentable": true,
                         "children": {
-                            "total": 0,
-                            "layouts": []
+                            "total": 1,
+                            "layouts": [
+                                {
+                                    "updateable": true,
+                                    "plid": 208489,
+                                    "hasChildren": false,
+                                    "groupId": 20182,
+                                    "sortable": true,
+                                    "priority": 1,
+                                    "privateLayout": false,
+                                    "type": "portlet",
+                                    "layoutId": 1509,
+                                    "uuid": "26df85a8-1faa-4df9-887a-78e7a88368e7",
+                                    "parentable": true,
+                                    "children": {
+                                        "total": 0,
+                                        "layouts": []
+                                    },
+                                    "contentDisplayPage": false,
+                                    "parentLayoutId": 1504,
+                                    "name": "Definition of Terms",
+                                    "friendlyURL": "/offices/institutional-research/factbook/definition-of-terms"
+                                }
+                            ]
                         },
                         "contentDisplayPage": false,
                         "parentLayoutId": 1503,

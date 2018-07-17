@@ -9,6 +9,9 @@ var request = require('request');
 var async = require('async')
 var zlib = require('zlib');
 
+var ProgressBar = require('cli-progress');
+const bar = new ProgressBar.Bar({}, ProgressBar.Presets.shades_classic);
+
 var response;
 var count = [];
 
@@ -33,7 +36,6 @@ request('https://www.marist.edu/group/control_panel/manage?doAsGroupId=20182&con
 }, (err, res, body) => {
   if(res.headers['content-encoding'] == 'gzip') {
     zlib.gunzip(res.body, (err, dezip) => {
-      console.log("Res recieved");
       if (err) console.log(err);
 
       response = dezip.toString();
@@ -68,80 +70,164 @@ request('https://www.marist.edu/group/control_panel/manage?doAsGroupId=20182&con
       }while (temp[i] != undefined);
 
       tree = JSON.parse(tree);
-      fillBranch(tree.layouts);
+      addChildren(tree.layouts);
     });
   }
 });
 
-function fillBranch(layouts) {
-  async.forEachOf(layouts, (result, i, callback) => {
-    if(layouts[i].hasChildren) {
-      request('https://www.marist.edu/c/layouts_admin/get_layouts?cmd=get&doAsGroupId=20182&end=20&groupId=20182&incomplete=1&limit=20&p_auth=qVxIXONA&p_l_id=20176&p_p_id=88&parentLayoutId=' + layouts[i].layoutId + '&privateLayout=0&start=0&treeId=layoutsTree', {
-        encoding: null,
-        credentials: 'same-origin',
-        headers: {
-          'Host': 'www.marist.edu',
-          'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
-          'Accept': '*/*',
-          'Accept-Language': 'en-US,en;q=0.5',
-          'Accept-Encoding': 'gzip, deflate, br',
-          'Referer': 'https://www.marist.edu/group/control_panel?refererPlid=20185&doAsGroupId=20182&controlPanelCategory=current_site.pages&p_p_id=156&_156_selPlid=137837',
-          'X-Requested-With': 'XMLHttpRequest',
-          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-          'Content-Length': '224',
-          'Cookie': '__utma=220728263.1974296480.1521576471.1526050319.1528481507.5; __utmz=220728263.1521576471.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US; _ga=GA1.2.1974296480.1521576471; JSESSIONID=A0F3F5D9A128270594492EBC279B4538; _gid=GA1.2.1139722017.1531746938; LFR_SESSION_STATE_20159=1531752816621; COMPANY_ID=20155; ID=6168316a6c526452776a4a515133627450776e5930773d3d; USER_UUID=374652383144446d48454f78374c4f4a49384335425073376b58743249394d456e613965485362325475303d; LFR_SESSION_STATE_175775=expired; LOGIN=616b7572617461; PASSWORD=594c424174496b5668376f5632393558486f324761413d3d; REMEMBER_ME=true; SCREEN_NAME=45344a4a744d4f30464e6d543856794e4b4e6d6672513d3d',
-          'Connection': 'keep-alive'
-        },
-        method: 'POST'
-      }, (err, res, body) => {
-        if(res.headers['content-encoding'] == 'gzip') {
-          zlib.gunzip(res.body, (err, dezip) => {
-            if(err) {
 
-              console.log(err);
-            }else {
-              var branch = JSON.parse(dezip.toString())
+function addChildren(array) {
+  console.log('Add Children...')
 
-              layouts[i].children = branch;
-              //console.log(branch)
+  function fillBranch(layouts) {
+    async.forEachOf(layouts, (result, i, callback) => {
+    //layouts.forEach((item, i) => {
+      if(layouts[i].hasChildren) {
+        request('https://www.marist.edu/c/layouts_admin/get_layouts?cmd=get&doAsGroupId=20182&end=20&groupId=20182&incomplete=1&limit=20&p_auth=DS7Zi9P3&p_l_id=20176&p_p_id=88&parentLayoutId=' + layouts[i].layoutId + '&privateLayout=0&start=0&treeId=layoutsTree', {
+          encoding: null,
+          credentials: 'same-origin',
+          headers: {
+            'Host': 'www.marist.edu',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+            'Accept': '*\/*',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Referer': 'https://www.marist.edu/group/control_panel?refererPlid=20185&doAsGroupId=20182&controlPanelCategory=current_site.pages&p_p_id=156&_156_selPlid=138920',
+            'X-Requested-With': 'XMLHttpRequest',
+            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'Content-Length': '225',
+            'Cookie':' __utma=220728263.1974296480.1521576471.1526050319.1528481507.5; __utmz=220728263.1521576471.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US; _ga=GA1.2.1974296480.1521576471; JSESSIONID=E80A0797627452305985111FBD6D9134; _gid=GA1.2.1139722017.1531746938; LFR_SESSION_STATE_20159=1531752816621; COMPANY_ID=20155; ID=6168316a6c526452776a4a515133627450776e5930773d3d; USER_UUID=374652383144446d48454f78374c4f4a49384335425073376b58743249394d456e613965485362325475303d; LFR_SESSION_STATE_175775=expired; LOGIN=616b7572617461; PASSWORD=594c424174496b5668376f5632393558486f324761413d3d; REMEMBER_ME=true; SCREEN_NAME=45344a4a744d4f30464e6d543856794e4b4e6d6672513d3d',
+            'Connection': 'keep-alive'
+          },
+          method: 'POST'
+        }, (err, res, body) => {
+          if(res.headers['content-encoding'] == 'gzip') {
+            zlib.gunzip(res.body, (err, dezip) => {
+              if(err) throw err;
 
+                var branch = JSON.parse(dezip.toString());
+                layouts[i].children = branch;
 
-              if(branch.layouts.length != 0) {
-                fillBranch(branch.layouts);
-              }
-            }
-            callback();
-          });
-        }
-      });
-    }
-  }, () => {
-    fs.writeFile('./tree.json', JSON.stringify(tree, 'utf8', 4), () => {
-      console.log("Done!");
-    });
-  });
-}
+                if(list.indexOf(layouts[i].friendlyURL) == -1) { //Add to list
+                  list.push(layouts[i].friendlyURL);
+                }
 
 
-function writeList(a) {
-  async.forEachOf(a, (result, i, callback) => {
-    list.push(a[i].friendlyURL);
+                if(branch.layouts.length != 0) {
+                  fillBranch(branch.layouts);
+                }else {
+                  callback();
+                }
 
-    if(a[i].hasChildren) {
-      if(a[i].children.layouts.length != 0) {
-        writeList(a[i].children.layouts);
+            });
+          }
+        });
+
       }else {
+        if(list.indexOf(layouts[i].friendlyURL) == -1) { //Add to list
+          list.push(layouts[i].friendlyURL);
+        }
         callback();
       }
-    }
-  }, (err) => {
-    if(err) console.error(err);
-    //console.log(list)
-    fs.writeFile('./pageList.txt', list, () => {
-      console.log("List Done!");
-    })
+    });
+  }
+  fillBranch(array);
+  console.log('Add Children - Done')
+
+  return new Promise((resolve, reject) => {
+    resolve();
   });
 }
+
+
+/*
+function makeList(a) {
+  console.log('Write List...');
+
+  function writeList(layouts) {
+    async.eachOfSeries(layouts, (result, i, callback) => {
+      if(list.indexOf(layouts[i].friendlyURL) == -1) {
+        list.push(layouts[i].friendlyURL);
+      }
+      if(layouts[i].hasChildren) {
+        writeList(layouts[i].children.layouts);
+      }
+      callback();
+
+    }, (err) => {
+      if(err) throw err;
+    });
+  }
+  writeList(a);
+
+  console.log('Write List - Done')
+
+  return new Promise((resolve, reject) => {
+    resolve();
+  })
+
+}
+*/
+
+
+//Looking for http://www.marist.edu/images/pdficon.gif
+var found = [];
+function sweep(search) {
+  console.log("\nSearch Called...");
+  console.log(search);
+
+  var progress = 1;
+  bar.start(list.length, progress);
+
+
+  async.forEachOf(list, (results, i, callback) => {
+  //list.forEach((item, i) => {
+    var result = [];
+    request('https://www.marist.edu' + list[i], {
+      credentials: 'same-origin',
+      headers: {
+        'Host': 'www.marist.edu',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Upgrade-Insecure-Requests': 1,
+        'Cookie': 'JSESSIONID=3AD0AFA97426F2F4029F18AB61C3881B; COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US; _ga=GA1.2.1679792909.1531840888; _gid=GA1.2.729270746.1531840888; _gat_gtag_UA_320870_1=1; LFR_SESSION_STATE_20159=1531840887798',
+        'Connection': 'keep-alive'
+      },
+      method: 'GET'
+    }, (err, res, body) => {
+      if(err) throw err;
+
+    }).on('data', (data) => {
+      result.push(data);
+      console.log("\n"+i)
+    }).on('end', (data) => {
+      //result.push(data);
+      console.log("END: " + i)
+      zlib.gunzip(Buffer.concat(result), (err, dezip) => {
+        if(err) throw err;
+        if(dezip.toString().match(new RegExp(search, "gi")) !== null) {
+          found.push(list[i]);
+        }
+
+        bar.update(progress++);
+        //callback();
+      });
+    })
+
+
+  }, (err) => {
+    if(err) throw err;
+    console.log("\nSearch Done.")
+    //console.log(found)
+  });
+
+}
+
+
+
+
+
 
 
 
@@ -151,10 +237,40 @@ app.get('/', (req, res) => {
   res.end();
 });
 app.get('/list', (req, res) => {
-  writeList(tree.layouts);
-  res.send(list)
+  res.json(list);
   res.end();
 });
+app.get('/updateTree', (req, res) => {
+  fs.writeFileSync('./tree.json', JSON.stringify(tree, 'utf8', 4), () => {
+    console.log("Done!");
+  });
+});
+app.get('/updateList', (req, res) => {
+  fs.writeFile('./pageList.txt', JSON.stringify(list, 'utf8', 1), () => {
+    console.log("Done!");
+  });
+  res.send("Done!");
+  res.end();
+});
+
+
+
+app.route('/login')
+  .get((req, res) => {
+    res.sendFile(path.resolve('./loginPage.html'));
+  })
+  .post((req, res) => {
+    //TODO: Push post request against liferay server to duplicate login information
+    //p_auth
+    //JSESSIONID
+  });
+
+app.get('/search', (req, res) => {
+  sweep('http://www.marist.edu/images/pdficon.gif');
+  res.json(found);
+  res.end();
+});
+
 
 
 app.listen('3000', () => {
