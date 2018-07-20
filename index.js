@@ -6,7 +6,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var fetch = require('node-fetch');
 var request = require('request');
-var async = require('async')
+var async = require('async');
 var zlib = require('zlib');
 
 var ProgressBar = require('cli-progress');
@@ -17,6 +17,12 @@ var count = [];
 
 var tree = "";
 var list = [];
+
+
+var jsessionid = 'B850F21BF2ADCBB0F212050111B66A1E';
+var p_pauth = 'C3bDBwuU';
+
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 // doAsGroupId=20182&controlPanelCategory=current_site.pages&p_p_id=156
@@ -30,7 +36,8 @@ request('https://www.marist.edu/group/control_panel/manage?doAsGroupId=20182&con
     'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryCFAcNuZ0wAmyodJy',
     'Connection': 'keep-alive',
     'Cache-Control': 'max-age=0',
-    'Cookie': '__utma=220728263.1974296480.1521576471.1526050319.1528481507.5; __utmz=220728263.1521576471.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US; _ga=GA1.2.1974296480.1521576471; JSESSIONID=A0F3F5D9A128270594492EBC279B4538; _gid=GA1.2.1139722017.1531746938; LFR_SESSION_STATE_20159=1531752816621; COMPANY_ID=20155; ID=6168316a6c526452776a4a515133627450776e5930773d3d; USER_UUID=374652383144446d48454f78374c4f4a49384335425073376b58743249394d456e613965485362325475303d; LFR_SESSION_STATE_175775=expired; LOGIN=616b7572617461; PASSWORD=594c424174496b5668376f5632393558486f324761413d3d; REMEMBER_ME=true; SCREEN_NAME=45344a4a744d4f30464e6d543856794e4b4e6d6672513d3d'
+    'Cookie': '__utma=220728263.1974296480.1521576471.1526050319.1528481507.5; __utmz=220728263.1521576471.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US; _ga=GA1.2.1974296480.1521576471; JSESSIONID=' + jsessionid + '; _gid=GA1.2.1139722017.1531746938; LFR_SESSION_STATE_20159=1531752816621; COMPANY_ID=20155; ID=6168316a6c526452776a4a515133627450776e5930773d3d; USER_UUID=374652383144446d48454f78374c4f4a49384335425073376b58743249394d456e613965485362325475303d; LFR_SESSION_STATE_175775=expired; LOGIN=616b7572617461; PASSWORD=594c424174496b5668376f5632393558486f324761413d3d; REMEMBER_ME=true; SCREEN_NAME=45344a4a744d4f30464e6d543856794e4b4e6d6672513d3d',
+    'REMEMBER_ME': 'true'
     },
   method: 'POST'
 }, (err, res, body) => {
@@ -83,7 +90,7 @@ function addChildren(array) {
     async.forEachOf(layouts, (result, i, callback) => {
     //layouts.forEach((item, i) => {
       if(layouts[i].hasChildren) {
-        request('https://www.marist.edu/c/layouts_admin/get_layouts?cmd=get&doAsGroupId=20182&end=20&groupId=20182&incomplete=1&limit=20&p_auth=DS7Zi9P3&p_l_id=20176&p_p_id=88&parentLayoutId=' + layouts[i].layoutId + '&privateLayout=0&start=0&treeId=layoutsTree', {
+        request('https://www.marist.edu/c/layouts_admin/get_layouts?cmd=get&doAsGroupId=20182&end=20&groupId=20182&incomplete=1&limit=20&p_auth=' + p_pauth + '&p_l_id=20176&p_p_id=88&parentLayoutId=' + layouts[i].layoutId + '&privateLayout=0&start=0&treeId=layoutsTree', {
           encoding: null,
           credentials: 'same-origin',
           headers: {
@@ -96,7 +103,7 @@ function addChildren(array) {
             'X-Requested-With': 'XMLHttpRequest',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             'Content-Length': '225',
-            'Cookie':' __utma=220728263.1974296480.1521576471.1526050319.1528481507.5; __utmz=220728263.1521576471.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US; _ga=GA1.2.1974296480.1521576471; JSESSIONID=E80A0797627452305985111FBD6D9134; _gid=GA1.2.1139722017.1531746938; LFR_SESSION_STATE_20159=1531752816621; COMPANY_ID=20155; ID=6168316a6c526452776a4a515133627450776e5930773d3d; USER_UUID=374652383144446d48454f78374c4f4a49384335425073376b58743249394d456e613965485362325475303d; LFR_SESSION_STATE_175775=expired; LOGIN=616b7572617461; PASSWORD=594c424174496b5668376f5632393558486f324761413d3d; REMEMBER_ME=true; SCREEN_NAME=45344a4a744d4f30464e6d543856794e4b4e6d6672513d3d',
+            'Cookie':' __utma=220728263.1974296480.1521576471.1526050319.1528481507.5; __utmz=220728263.1521576471.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US; _ga=GA1.2.1974296480.1521576471; JSESSIONID=' + jsessionid + '; _gid=GA1.2.1139722017.1531746938; LFR_SESSION_STATE_20159=1531752816621; COMPANY_ID=20155; ID=6168316a6c526452776a4a515133627450776e5930773d3d; USER_UUID=374652383144446d48454f78374c4f4a49384335425073376b58743249394d456e613965485362325475303d; LFR_SESSION_STATE_175775=expired; LOGIN=616b7572617461; PASSWORD=594c424174496b5668376f5632393558486f324761413d3d; REMEMBER_ME=true; SCREEN_NAME=45344a4a744d4f30464e6d543856794e4b4e6d6672513d3d',
             'Connection': 'keep-alive'
           },
           method: 'POST'
@@ -170,6 +177,8 @@ function makeList(a) {
 */
 
 
+
+
 //Looking for http://www.marist.edu/images/pdficon.gif
 var found = [];
 function sweep(search) {
@@ -196,16 +205,66 @@ function sweep(search) {
       },
       method: 'GET'
     }, (err, res, body) => {
+      console.log(i + ": " + res.statusCode)
       if(err) throw err;
 
+    }).on('response', (res) => {
+      console.log('START: ' + i)
+
+      //res.pipe(zlib.createGunzip()).pipe(result)
+
     }).on('data', (data) => {
+      console.log("Data for " + i)
+      //result += data;
+    }).on('end', () => {
+      console.log('END: ' + i)
+      /*
+      zlib.gunzip(result, (err, dezip) => {
+        if(err) {
+          console.log("Error at " + i)
+          throw err;
+        }else {
+          console.log("Done " + i)
+          if(dezip.toString().match(new RegExp(search, "gi")) !== null) {
+            found.push(list[i]);
+          }
+        }
+      })*/
+
+      console.log(result)
+      bar.update(progress++);
+      callback();
+    })
+/*
+    .on('response', (res) => {
+      console.log("START: " + i + " - " + res.statusCode)
+      if(res.statusCode == 200) {
+        if(res.headers['content-encoding'] == 'gzip') {
+          res.pipe(zlib.createGunzip())
+        }
+      }
+      */
+      //if(res.statusCode === 200) {
+      //  result.push(res.body);
+      //  console.log("\n"+i)
+      //}
+    .on('error', (err) => {
+      throw err;
+    })
+
+
+/*
+    .on('data', (data) => {
+      //console.log(res.statusCode)
       result.push(data);
       console.log("\n"+i)
     }).on('end', (data) => {
       //result.push(data);
       console.log("END: " + i)
       zlib.gunzip(Buffer.concat(result), (err, dezip) => {
-        if(err) throw err;
+        if(err) {
+          throw err;
+        }
         if(dezip.toString().match(new RegExp(search, "gi")) !== null) {
           found.push(list[i]);
         }
@@ -215,6 +274,7 @@ function sweep(search) {
       });
     })
 
+*/
 
   }, (err) => {
     if(err) throw err;
@@ -266,7 +326,7 @@ app.route('/login')
   });
 
 app.get('/search', (req, res) => {
-  sweep('http://www.marist.edu/images/pdficon.gif');
+  sweep('/images/pdficon.gif');
   res.json(found);
   res.end();
 });
